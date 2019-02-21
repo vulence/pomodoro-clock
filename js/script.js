@@ -16,6 +16,31 @@ subtractSes.addEventListener("click", changeValSes);
 addBreak.addEventListener("click", changeValBreak);
 subtractBreak.addEventListener("click", changeValBreak);
 
+addSes.addEventListener("mouseover", changeSize);
+addSes.addEventListener("mouseleave", reverseSize);
+subtractSes.addEventListener("mouseover", changeSize);
+subtractSes.addEventListener("mouseleave", reverseSize);
+addBreak.addEventListener("mouseover", changeSize);
+addBreak.addEventListener("mouseleave", reverseSize);
+subtractBreak.addEventListener("mouseover", changeSize);
+subtractBreak.addEventListener("mouseleave", reverseSize);
+
+startTimer.addEventListener("mouseover", changeSize);
+startTimer.addEventListener("mouseleave", reverseSize);
+stopTimer.addEventListener("mouseover", changeSize);
+stopTimer.addEventListener("mouseleave", reverseSize);
+
+function changeSize(e) {
+	e.target.style.width = "60px";
+	e.target.style.height = "60px";
+	console.log(e.target.style);
+}
+
+function reverseSize(e) {
+	e.target.style.width = "40px";
+	e.target.style.height = "40px";
+}
+
 function countDown() {
 	stopTimer.addEventListener("click", stopCtDown);
 	

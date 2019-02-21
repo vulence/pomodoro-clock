@@ -5,20 +5,24 @@
 	<meta charset = "UTF-8">
 	<link href="css/reset.css" rel="stylesheet" type="text/css"></link>
 	<link href="css/style.css" rel="stylesheet" type="text/css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<p>Pomodoro Clock</p>
+	</header>
 	
 	<div id="container">
 		<div id="time">
 			<div id="session">
-				<p>Session</p>
+				<p id="sessionText">Session</p>
 				<p id="sessionValue">25</p>
 				<img src="images/plus.png" alt="plus" id="sesPlus" style="width:40px;height:40px;"></img>
 				<img src="images/minus.png" alt="minus" id="sesMinus" style="width:40px;height:40px;"></img>
 			</div>
 			
 			<div id="break">
-				<p>Break</p>
+				<p id="breakText">Break</p>
 				<p id="breakValue">5</p>
 				<img src="images/plus.png" alt="plus" id="breakPlus" style="width:40px;height:40px;"></img>
 				<img src="images/minus.png" alt="minus" id="breakMinus" style="width:40px;height:40px;"></img>
@@ -29,16 +33,12 @@
 			<p id="getMinsAndSecs">25:00</p>
 			<img src="images/play.png" alt="play" id="startTimer" style="width:40px;height:40px;"></img>
 			<img src="images/restart3.png" alt="reset" id="stopTimer" style="width:40px;height:40px;"></img>
-
-
-
 		</div>
-
-
 	</div>
-
-
-
+	
+	<footer>
+		<p>Made by: <a href="https://github.com/vulence" target="_blank">vulence</a></p>
+	</footer>
 
 	<script src="js/script.js"></script>
 </body>
