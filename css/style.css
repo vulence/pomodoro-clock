@@ -1,0 +1,90 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-size: 20pt;
+	box-sizing: border-box;
+	background-image: url(../images/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#container {
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	justify-content: center;
+	margin-top: 12vh;
+	flex-direction: column;
+}
+
+#time {
+	margin: 0 auto;
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: row;
+	width: 400px;
+	background-color: goldenrod;
+	padding: 20px;
+	border-radius: 15px;	
+	box-shadow: 8px 8px 20px 4px black;
+}
+
+#session {
+	flex: 1;
+}
+
+#main {
+	flex: 3;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: yellow;
+	width: 440px;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 8px 8px 20px 4px black;
+}
+
+#breakValue, #sessionValue {
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+#sesMinus {
+	margin-left: 25px;
+}
+
+#breakMinus {
+	margin-left: 23px;
+}
+
+#getMinsAndSecs {
+	text-align: center;
+	margin-top: 25%;
+	margin-bottom: 20px;
+}
+
+#startTimer {
+	margin-right: 10px;
+	transition: 0.5s;
+}
+
+#startTimer:hover {
+	background-color: lightgrey;
+	transition: 0.5s;
+	border-radius: 30px;
+}
+
+#stopTimer {
+	margin-left: 10px;
+	transition: 0.5s;
+	border-radius: 30px;
+}
+
+#stopTimer:hover {
+	transition: 0.5s;
+	background-color: lightgrey;
+}
